@@ -2,5 +2,5 @@
 
 
 
-!\[Project Architecture](https://github.com/SravanthiModiboyena/Uber\_Data\_Engineer\_Project/blob/main/architecture.png)
+!\[Project Architecture](https://github.com/SravanthiModiboyena/Uber_Data_Engineer_Project/blob/main/architecture.png)
 

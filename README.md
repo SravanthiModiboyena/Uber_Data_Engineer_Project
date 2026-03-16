@@ -13,15 +13,25 @@ The goal of this project is to simulate how **real-time ride data flows through 
 ### END-to-End Data Flow
 
 Web Application
+
 ↓
+
 Azure Event Hub (Streaming Ingestion)
+
 ↓
+
 Azure Databricks (Streaming Processing)
+
 ↓
+
 Azure Data Lake Storage (ADLS)
+
 ↓
+
 Bronze Layer → Silver Layer → Gold Layer
+
 ↓
+
 Analytics / Reporting / Business Insights
 
 ---
@@ -40,7 +50,7 @@ Analytics / Reporting / Business Insights
 
 ---
 
-# 1  Web Application (Event Producer)
+# 1.  Web Application (Event Producer)
 
 ## What is the Web Application?
 
@@ -85,7 +95,7 @@ This application acts as the **event producer**.
 
 ---
 
-# 2️  Azure Event Hub
+# 2️.  Azure Event Hub
 
 ## What is Azure Event Hub?
 
@@ -146,7 +156,7 @@ Event Hub works similar to **Kafka streaming systems**.
 
 ---
 
-# 3️  Streaming
+# 3️.  Streaming
 
 ## What is Streaming?
 
@@ -164,7 +174,7 @@ Since Uber rides happen every second, **streaming processing is required**.
 
 ---
 
-# 4️  Azure Databricks
+# 4️.  Azure Databricks
 
 ## What is Azure Databricks?
 
@@ -190,7 +200,7 @@ Databricks processes the data using **Spark Structured Streaming**.
 
 ---
 
-# 5️  Azure Data Lake Storage (ADLS)
+# 5️.  Azure Data Lake Storage (ADLS)
 
 ## What is ADLS?
 
@@ -213,7 +223,7 @@ Data lakes allow organizations to:
 
 ---
 
-# 6️  Medallion Architecture
+# 6️.  Medallion Architecture
 
 This project follows **Medallion Architecture**, which organizes data into three layers:
 
@@ -344,7 +354,7 @@ Business Metrics
 
 Gold Tables
 
-# 7️  Azure Data Factory (ADF)
+# 7️.  Azure Data Factory (ADF)
 
 ## What is Azure Data Factory?
 
@@ -371,7 +381,7 @@ Process Bronze → Silver → Gold
 
 ---
 
-# 8️  Event Hub → Databricks Integration
+# 8️.  Event Hub → Databricks Integration
 
 Databricks connects to Event Hub using a **connection string**.
 
@@ -385,7 +395,7 @@ Event Hub → Spark Structured Streaming → Databricks Processing
 
 ---
 
-# 9️  ADLS → Databricks Connection
+# 9️.  ADLS → Databricks Connection
 
 Databricks connects to ADLS using **mount points** or **storage credentials**.
 
@@ -399,7 +409,7 @@ This allows Databricks to read and write data into the data lake.
 
 ---
 
-# 10  End-to-End Pipeline Flow
+# 10.  End-to-End Pipeline Flow
 
 Step 1
 Web application generates Uber ride events.

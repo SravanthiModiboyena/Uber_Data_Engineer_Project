@@ -333,12 +333,15 @@ Silver Data → Aggregation → Gold Tables
 Silver Data
 
 ⬇
+
 Aggregation
 
 ⬇
+
 Business Metrics
 
 ⬇
+
 Gold Tables
 
 # 7️⃣ Azure Data Factory (ADF)

@@ -331,10 +331,13 @@ Silver Data → Aggregation → Gold Tables
 **
 
 Silver Data
+
 ⬇
 Aggregation
+
 ⬇
 Business Metrics
+
 ⬇
 Gold Tables
 

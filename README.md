@@ -1,6 +1,6 @@
-# 🚖 Uber Real-Time Data Engineering Pipeline (Azure + Databricks)
+#  Uber Real-Time Data Engineering Pipeline (Azure + Databricks)
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates how to build a **real-time data engineering pipeline** similar to what companies like Uber use to process ride events. The pipeline captures ride booking events from a **web application**, streams them through **Azure Event Hub**, processes them using **Azure Databricks with Apache Spark Structured Streaming**, and stores the data in **Azure Data Lake Storage (ADLS)** using **Medallion Architecture (Bronze → Silver → Gold layers)**.
 
@@ -8,7 +8,7 @@ The goal of this project is to simulate how **real-time ride data flows through 
 
 ---
 
-# 🏗️ Project Architecture
+#  Project Architecture
 
 ### END-to-End Data Flow
 
@@ -26,7 +26,7 @@ Analytics / Reporting / Business Insights
 
 ---
 
-# 📊 Technologies Used
+#  Technologies Used
 
 | Technology                     | Purpose                     |
 | ------------------------------ | --------------------------- |
@@ -40,7 +40,7 @@ Analytics / Reporting / Business Insights
 
 ---
 
-# 1️⃣ Web Application (Event Producer)
+# 1 Web Application (Event Producer)
 
 ## What is the Web Application?
 
@@ -85,7 +85,7 @@ This application acts as the **event producer**.
 
 ---
 
-# 2️⃣ Azure Event Hub
+# 2️ Azure Event Hub
 
 ## What is Azure Event Hub?
 
@@ -146,7 +146,7 @@ Event Hub works similar to **Kafka streaming systems**.
 
 ---
 
-# 3️⃣ Streaming
+# 3️ Streaming
 
 ## What is Streaming?
 
@@ -164,7 +164,7 @@ Since Uber rides happen every second, **streaming processing is required**.
 
 ---
 
-# 4️⃣ Azure Databricks
+# 4️ Azure Databricks
 
 ## What is Azure Databricks?
 
@@ -190,7 +190,7 @@ Databricks processes the data using **Spark Structured Streaming**.
 
 ---
 
-# 5️⃣ Azure Data Lake Storage (ADLS)
+# 5️ Azure Data Lake Storage (ADLS)
 
 ## What is ADLS?
 
@@ -213,7 +213,7 @@ Data lakes allow organizations to:
 
 ---
 
-# 6️⃣ Medallion Architecture
+# 6️ Medallion Architecture
 
 This project follows **Medallion Architecture**, which organizes data into three layers:
 
@@ -225,7 +225,7 @@ Each layer improves **data quality and usability**.
 
 ---
 
-# 🥉 Bronze Layer (Raw Data Layer)
+#  Bronze Layer (Raw Data Layer)
 
 ## What is Bronze Layer?
 
@@ -253,7 +253,7 @@ No transformations are applied.
 
 ---
 
-# 🥈 Silver Layer (Cleaned Data Layer)
+#  Silver Layer (Cleaned Data Layer)
 
 ## What is Silver Layer?
 
@@ -291,7 +291,7 @@ Bronze Data → Cleaning & Transformation → Silver Tables
 
 ---
 
-# 🥇 Gold Layer (Business Layer)
+#  Gold Layer (Business Layer)
 
 ## What is Gold Layer?
 
@@ -318,7 +318,7 @@ Example table:
 ### Data Flow
 
 ```
-Silver Data → Aggregation → Gold Tables
+Silver Data  → Aggregation  → Gold Tables
 ```
 
 ### Storage Path
@@ -344,7 +344,7 @@ Business Metrics
 
 Gold Tables
 
-# 7️⃣ Azure Data Factory (ADF)
+# 7️ Azure Data Factory (ADF)
 
 ## What is Azure Data Factory?
 
@@ -371,7 +371,7 @@ Process Bronze → Silver → Gold
 
 ---
 
-# 8️⃣ Event Hub → Databricks Integration
+# 8️ Event Hub → Databricks Integration
 
 Databricks connects to Event Hub using a **connection string**.
 
@@ -385,7 +385,7 @@ Event Hub → Spark Structured Streaming → Databricks Processing
 
 ---
 
-# 9️⃣ ADLS → Databricks Connection
+# 9️ ADLS → Databricks Connection
 
 Databricks connects to ADLS using **mount points** or **storage credentials**.
 
@@ -399,7 +399,7 @@ This allows Databricks to read and write data into the data lake.
 
 ---
 
-# 🔟 End-to-End Pipeline Flow
+# 10 End-to-End Pipeline Flow
 
 Step 1
 Web application generates Uber ride events.
@@ -427,7 +427,7 @@ Gold datasets are used for **analytics and reporting**.
 
 
 
-# 📈 Key Features
+#  Key Features
 
 ✔ Real-time data ingestion
 ✔ Streaming data processing
@@ -436,7 +436,7 @@ Gold datasets are used for **analytics and reporting**.
 ✔ Reliable Delta Lake storage
 ✔ End-to-end Azure data pipelines 
 
-# 🎯 Learning Outcomes
+#  Learning Outcomes
 
 Through this project you will learn:
 
@@ -450,7 +450,7 @@ Through this project you will learn:
 
 ---
 
-# 🚀 Future Improvements
+#  Future Improvements
 
 * Add Power BI dashboards
 * Implement monitoring and logging
@@ -466,7 +466,7 @@ Through this project you will learn:
 
 
 
-# 👩‍💻 Author
+#  Author
 
 **Sravanthi Modiboyena**
 
